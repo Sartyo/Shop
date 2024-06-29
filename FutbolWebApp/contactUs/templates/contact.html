@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contact Us
+{% endblock title %}
+
+{% block content %}
+    {% if "valid" in request.GET %}
+        <p class="contact-success-msg">Your message has been successfully deliver to support, wait for a reply</p>
+    {% else %}
+        <form class="contact-form-container" action="" method="POST">
+            {% csrf_token %}
+            <p class="contact-title">If you have an issue and wish for assistance, please fill the form to send a message to our support team so we can help you</p>
+            {% for field in contactForm %}
+                <div class="field-wrapper">
+                    {{field.errors}}
+                    {{field.label_tag}}
+                    {{field}}
+                </div>
+            {% endfor %}
+            <input type="submit" class="submit-button" value="Send">
+        </form>
+    {% endif %}
+{% endblock content %}

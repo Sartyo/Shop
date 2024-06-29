@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block content %}
+    <form class="login-form-container" action="" method="POST">
+        <p class="login-msg">Login using a registered account in our website</p>
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="auth-form-field">
+                {{field.errors}}
+                {{field.label_tag}}
+                {{field}}
+            </div>
+        {% endfor %}
+        <p class="auth-msg">If you do not have an account with us, <a href="{% url 'authenticator:signUp' %}" class="auth-msg">use this link</a> to make a new account</p>
+        <input class="submit-button" value="Login" type="submit">
+    </form>
+{% endblock content %}

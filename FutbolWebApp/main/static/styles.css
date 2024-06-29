@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal 300 !important;
+}
+
+.content-container{
+    margin-top: 100px;
+}
+
+.body-header{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 60% 20%;
+    height: 100px;
+    background-color: #1a2b3d;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.logo-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    line-height: 100px;
+    vertical-align: 100px;
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.nav-menu-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu-link{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.nav-menu-link:hover{
+    transform: scale(1.05);
+}
+
+.auth-menu{
+    justify-self: end;
+    padding-right: 8%;
+    gap: 20px;
+    display: flex;
+    padding-top: 35px;
+}
+
+.username-header{
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    color: white;
+    font-size: 16px;
+}
+
+.auth-link{
+    color: white;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 30px;
+    vertical-align: middle;
+    transition: ease-in-out 0.3s;
+}
+
+.auth-link:hover{
+    transform: scale(1.05);
+}
+
+.contact-title{
+    margin-left: 15%;
+    width: 70%;
+    font-size: 28px;
+    text-align: center;
+}
+
+.contact-form-container{
+    width: 100%;
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+}
+
+.field-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-self: center;
+    gap: 5px;
+}
+
+.field-wrapper label{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.field-wrapper input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #676774;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.field-wrapper input:hover{
+    border: solid 1px #2f2f30;
+}
+
+.field-wrapper textarea{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+    height: 150px;
+}
+
+.submit-button{
+    justify-self: center;
+    width: 10%;
+    font-size: 20px;
+    height: 35px;
+    border: solid 1px #676774;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: ease-in-out 0.3s;
+    margin-bottom: 50px;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.submit-button:active{
+    background-color: #ddd;
+}
+
+.contact-success-msg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    text-align: center;
+}
+
+.login-msg{
+    font-size: 32px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.auth-msg{
+    font-size: 20px;
+    text-align: center;
+}
+
+.login-form-container{
+    width: 100%;
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+}
+
+.auth-form-field{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-self: center;
+    gap: 5px;
+}
+
+.auth-form-field label{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.auth-form-field input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #676774;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.auth-form-field input:hover{
+    border: solid 1px #2f2f30;
+}
